@@ -4,6 +4,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url(image/patt.png);
+}
+
+
+/* STANDART START */
+
+.header {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 25px 0;
 }
 
 .container {
@@ -13,14 +22,10 @@ body {
     padding-right: 15px;
 }
 
-.row:after {
-    content: "";
-    clear: both;
-    display: block;
+[class*="col-"] {
+    float: left;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: -15px;
-    margin-right: -15px;
 }
 
 .col-md-3 {
@@ -30,3 +35,377 @@ body {
 .col-md-6 {
     width: 50%;
 }
+
+.logo {
+    margin-top: 7px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row::after,
+.menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* STANDART END */
+
+
+/* INPUT START*/
+
+.input {
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 155px;
+    height: 30px;
+    font-size: 21px;
+    background: none;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(44, 113, 184);
+}
+
+
+/* INPUT END */
+
+
+/* SEARCH AND ORDERS START */
+
+.fm-search,
+.fm-orders {
+    float: left;
+    margin-top: 5px;
+    height: 40px;
+}
+
+.fm-search {
+    width: 200px;
+    border: 1px solid #2c71b8;
+}
+
+.fm-orders {
+    width: 70px;
+}
+
+.count {
+    float: right;
+    margin-right: -10px;
+    margin-top: -5px;
+    height: 20px;
+    width: 20px;
+    background: rgb(84, 153, 224);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.bd_order_btn {
+    float: right;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.btn_search {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    background: none;
+    background-color: rgb(44, 113, 184);
+    background-image: url('image/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.btn_search:active {
+    background-color: rgb(84, 153, 224);
+}
+
+.bd_order_btn:hover {
+    background-color: rgb(84, 153, 224);
+}
+
+
+/* SEARCH AND ORDERS END */
+
+
+/* MENU START */
+
+.menu>li {
+    float: left;
+    width: 25%;
+    border-left: 1px solid #2c71b8;
+    position: relative;
+}
+
+.menu>li:last-child {
+    border-right: 1px solid #2c71b8;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    text-decoration: none;
+    color: #2c71b8;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 300;
+    font-size: 21px;
+}
+
+.menu a:hover {
+    background-color: #2c71b8;
+    color: white;
+}
+
+.element_click {
+    position: relative;
+}
+
+.element_click:hover>.pp_menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pp_menu {
+    position: absolute;
+    background: #2c71b8;
+    width: 285px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity linear 0.3s;
+    margin-left: -1px;
+}
+
+.pp_menu a {
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    font-size: 21px;
+}
+
+.pp_menu a:hover {
+    background-color: white;
+    color: #2c71b8;
+}
+
+
+/* MENU END */
+
+
+/* FOOTER START */
+
+footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 8px 0;
+}
+
+.social-icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons ul li a span {
+    color: #000;
+    width: 34px;
+    background: #fff;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 0px 2px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 0px 2px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+
+.social-icons ul li a span:hover {
+    color: #0ccbf1;
+}
+
+.copy-bottom-txt p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.social-icons ul li:nth-child(2) {
+    margin: 0 10px;
+}
+
+.copy-bottom-txt p a {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 1px;
+    transition: .4s;
+}
+
+.copy-bottom-txt p a:hover {
+    color: #000;
+    text-decoration: underline;
+    padding-top: 4px;
+    font-weight: 700;
+}
+
+
+/* FOOTER END */
+
+
+/* SLIDER START */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* SLIDER END */
