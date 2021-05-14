@@ -5,35 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop-project</title>
+    <script src="js/slider.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
 </head>
 
 <body>
@@ -88,39 +65,41 @@
     <main class="main">
 
         <div class="slider">
+
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
-                <img src="image/slider/1.jpg" style="width:100%">
+                <img src="image/slider/1.jpg" width="1685" height="400">
+
                 <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
-                <img src="image/slider/2.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <img src="image/slider/2.jpg" width="1685" height="400">
+                <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
-                <img src="image/slider/3.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <img src="image/slider/3.jpg" width="1685" height="400">
+                <div class="text">Caption Three</div>
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
-                <img src="image/slider/4.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <img src="image/slider/4.jpg" width="1685" height="400">
+                <div class="text">Caption Three</div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <br>
+        </div>
+        <br>
 
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
 
         </div>
 
