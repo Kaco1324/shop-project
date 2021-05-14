@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+
     <script>
         var slideIndex = 0;
         showSlides();
@@ -69,10 +71,8 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="search">
-                                <form class="form-search">
-                                    <input placeholder="search" type="text" class="input-search">
-                                    <div class="input-search-button"><img class="input-search-button-img" src="image/search.png" alt=""></div>
-                                </form>
+                                <input placeholder="search" type="text" class="input-search">
+                                <div class="input-search-button"><img class="input-search-button-img" src="image/search.png" alt=""></div>
                             </div>
                         </div <div class="fm-orders">
                         <button class="bd_order_btn">
@@ -88,10 +88,6 @@
     <main class="main">
 
         <div class="slider">
-            <!-- Slideshow container -->
-            <!-- <div class="slideshow-container"> -->
-
-            <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
                 <img src="image/slider/1.jpg" style="width:100%">
@@ -115,20 +111,19 @@
                 <div class="text">Caption Text</div>
             </div>
 
-            <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
+            <br>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
 
         </div>
+
         </div>
 
         <div class="container">
@@ -139,39 +134,39 @@
                             <div class="filter-title">Device type</div>
                             <input type="checkbox" id="laptop">
                             <label for="laptop">
-                        <span class="filter-properties">Laptop</span>
+                        <span class="filter-prop">Laptop</span>
                     </label>
                             <br>
                             <input type="checkbox" id="tablet">
                             <label for="tablet">
-                        <span class="filter-properties">Tablet</span>
+                        <span class="filter-prop">Tablet</span>
                     </label>
                         </div>
                         <div class="color">
                             <div class="filter-title">color</div>
                             <input type="checkbox" id="black">
                             <label for="black">
-                        <span class="filter-properties">Black</span>
+                        <span class="filter-prop">Black</span>
                     </label>
                             <br>
                             <input type="checkbox" id="red">
                             <label for="red">
-                        <span class="filter-properties">Red</span>
+                        <span class="filter-prop">Red</span>
                     </label>
                             <br>
                             <input type="checkbox" id="green">
                             <label for="green">
-                        <span class="filter-properties">Green</span>
+                        <span class="filter-prop">Green</span>
                     </label>
                             <br>
                             <input type="checkbox" id="blue">
                             <label for="blue">
-                        <span class="filter-properties">Blue</span>
+                        <span class="filter-prop">Blue</span>
                     </label>
                             <br>
                             <input type="checkbox" id="orange">
                             <label for="orange">
-                        <span class="filter-properties">Orange</span>
+                        <span class="filter-prop">Orange</span>
                     </label>
                             <br>
                         </div>
@@ -179,27 +174,27 @@
                             <div class="filter-title">ram</div>
                             <input type="checkbox" id="1gb">
                             <label for="1gb">
-                        <span class="filter-properties">1GB</span>
+                        <span class="filter-prop">1GB</span>
                     </label>
                             <br>
                             <input type="checkbox" id="2gb">
                             <label for="2gb">
-                        <span class="filter-properties">2GB</span>
+                        <span class="filter-prop">2GB</span>
                     </label>
                             <br>
                             <input type="checkbox" id="4gb">
                             <label for="4gb">
-                        <span class="filter-properties">4GB</span>
+                        <span class="filter-prop">4GB</span>
                     </label>
                             <br>
                             <input type="checkbox" id="6gb">
                             <label for="6gb">
-                        <span class="filter-properties">6GB</span>
+                        <span class="filter-prop">6GB</span>
                     </label>
                             <br>
                             <input type="checkbox" id="8gb">
                             <label for="8gb">
-                        <span class="filter-properties">8GB</span>
+                        <span class="filter-prop">8GB</span>
                     </label>
                             <br>
                         </div>
@@ -678,9 +673,7 @@
 
     </main>
 
-    <footer class="footer">
-        <p>© Copyright 2021</p>
-    </footer>
+    <footer class="footer">© Copyright 2021 by Rostyslav Nahurskiy </footer>
 </body>
 
 </html>
