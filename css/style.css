@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url(image/patt.png);
+    background-image: url(../image/patt.png);
 }
 
 .container {
@@ -504,7 +504,7 @@ label {
     right: 10px;
     width: 30px;
     height: 30px;
-    background-image: url(image/blue-arrows.png);
+    background-image: url(../image/blue-arrows.png);
     background-repeat: no-repeat;
     background-position: center;
     border: solid 1px #2c71b8;
@@ -516,7 +516,7 @@ label {
     right: 10px;
     width: 30px;
     height: 30px;
-    background-image: url(image/blue-heart.png);
+    background-image: url(../image/blue-heart.png);
     background-repeat: no-repeat;
     background-position: center;
     border: solid 1px #2c71b8;
