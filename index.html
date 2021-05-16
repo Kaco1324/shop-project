@@ -5,16 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop-project </title>
+    <script type="text/javascript" nonce="607c789c8a464238bc31b2fd67c" src="//local.adguard.org?ts=1621108601686&amp;type=content-script&amp;dmn=kaco1324.github.io&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1"></script>
+    <script type="text/javascript" nonce="607c789c8a464238bc31b2fd67c" src="//local.adguard.org?ts=1621108601686&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;type=user-script"></script>
     <link rel="shortcut icon" type="image/png" href="image/favico.png" />
-    <script src="js/slider.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main-style.css">
     <link rel="stylesheet" href="css/header-class.css">
     <link rel="stylesheet" href="css/main-class.css">
-    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/footer-class.css">
+    <!-- SLIDER START -->
+    <link rel="stylesheet" href="css/slider/slider.min.css">
+    <script src="js/slider/jquery.min.js"></script>
+    <script src="js/slider/popper.min.js"></script>
+    <script src="js/slider/slider.min.js"></script>
+
+    <!-- SLIDER END -->
+
+    <!-- OLD SLIDER CODE START -->
+    <!-- 
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/slider.js"></script> -->
+
+    <!-- OLD SLIDER CODE END -->
+
+
+
 </head>
 
 <body>
@@ -69,8 +86,50 @@
     <main class="main">
 
         <div class="slider">
+            <div class="container mt-3">
 
-            <div class="mySlides fade">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+
+                    </ul>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/slider/3.jpg" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/slider/2.jpg" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/slider/3.jpg" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/slider/4.jpg" width="1100" height="500">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- <div class="mySlides fade">
                 <img src="image/slider/1.jpg" width="100%" height="400px">
             </div>
 
@@ -89,7 +148,7 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
+        <br> -->
 
         </div>
 
