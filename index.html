@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/main-class.css">
     <link rel="stylesheet" href="css/footer-class.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/grid.css">
     <!-- END CONNECTING STYLES -->
     <!-- START CONNECTING JS -->
     <script src="js/slider.js"></script>
@@ -202,12 +203,22 @@
                                 <span class="title">Laptops and Tablets</span>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <!-- END CRUMBS BLOCK -->
 
+                        <!-- START SORTING BLOCK -->
+
+                        <div class="col-md-4">
+                            <form>
+                                <select name="sorting" class="sorting">
+                                 <option value="s1">sort by name </option>
+                                 <option value="s2">sort by date</option>
+                                 <option value="s3" selected>sort by price</option>
+                                 <option value="s3" >sort by popularity</option>
+                                </select>
+                            </form>
                         </div>
                     </div>
-
-                    <!-- END CRUMBS BLOCK -->
+                    <!-- END SORTING BLOCK -->
 
                     <!--  START CONTENT ITEM BLOCK -->
                     <div class="row">
